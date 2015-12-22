@@ -1,6 +1,6 @@
 {
   "name": "api-request",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A wrapper for request module which allows you to control retries and refetch",
   "main": "api-request.js",
   "scripts": {
