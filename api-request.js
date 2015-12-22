@@ -50,7 +50,6 @@ function apiRequest(url, options) {
 
   options = merge(defaultOptions, options);
 
-  console.log("Fetching " + url);
   if (options.onStart) options.onStart();
 
   request.get({url: url, json: true}, function(err, res, body) {
