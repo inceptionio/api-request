@@ -55,7 +55,7 @@ function apiRequest(url, options) {
 
   request.get({url: url, json: true}, function(err, res, body) {
     if (err || !res || res.status !== 200 || body.status !== 'success') {
-      if (options.onError) options.onError(err, res);
+      if (options.onError) options.onError(res);
 
       retryApiRequest(url, options);
 
