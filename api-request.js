@@ -48,7 +48,7 @@ function apiRequest(url, options) {
     return;
   }
 
-  options = merge(defaultOptions, options);
+  options = merge(true, defaultOptions, options);
 
   if (options.onStart) options.onStart();
 
