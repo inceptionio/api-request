@@ -44,7 +44,6 @@ var defaultOptions = {
 function apiRequest(url, options) {
   if (!canMakeRequest(options.force,
                       options.lastUpdated)) {
-    console.log("Refusing to fetch " + url);
     return;
   }
 
